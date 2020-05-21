@@ -1,0 +1,245 @@
+<!DOCTYPE html> <!-- 21861110 정다은 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"></link>
+    <style>
+
+
+    body {
+      margin: auto;
+      width: 100%;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 14px;
+      background-image: url(.jpg);
+      background-repeat : no-repeat;
+      background-size : cover;
+      line-height:180%;}
+
+      html,body,.wrap {height: 100%; margin: 0; padding: 0}
+      .header{
+        height: 50px;
+        background-color: #000;
+        top: 0; left: 0; right: 0;
+      }
+
+      .container{
+        min-height: 76%;
+        padding: 0px 0;
+      }
+
+      .content{
+        background-color: #fff;
+      }
+
+      .footer{
+        height:50px;
+        background-color: #000;
+        position: fixed;
+        bottom: 0; left: 0; right: 0;}
+
+      p {
+        font-size: 50px;
+        font-family:"본명조";
+        color:#ffffff;
+        text-shadow: 3px 3px 3px #8C8C8C;
+        position: absolute; top: 25%; left: 25%; }
+
+      .p2 {
+          font-size: 20px;
+          font-family:"본명조";
+          color:#ffffff;
+          text-shadow: 3px 3px 3px #8C8C8C;
+          position: absolute; top: 50%; left: 45%; }
+
+      ul.navi {
+        width: 98%;
+        background-color:#000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        padding-top: 30px;
+        margin: auto;
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      ul.navi li {
+        list-style: none;
+        display: inline-block;
+        overflow: hidden;
+      }
+
+      ul.navi li a {
+        color: #C90000;
+        text-decoration: none;
+        margin: 0 12px;
+        display: block;
+        position: relative;
+      }
+
+      ul.navi li a:before {
+        content: attr(data-link-alt);
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        top: 100%;
+        transition: 0.5s;
+      }
+
+      ul.navi li a span {
+        color: #fff;
+        display: block;
+        transition: 0.5s;
+
+      }
+      ul.navi li a:hover span {
+        transform: translateY(-100%);
+      }
+
+      ul.navi li a:hover:before {
+        opacity: 1;
+        top: 0;
+      }
+
+
+      .box1-wrapper {
+        width: 1440px;
+        margin: 0 auto;
+        margin-top: 0%;
+      }
+
+      .box1 {
+        float: left;
+        margin: 0 30px;
+        }
+
+      .box2-wrapper {
+        width: 1440px;
+        margin: 0 auto;
+        margin-top: 4%;
+      }
+
+      .box2 {
+        width: 300px;
+        text-align: center;
+        float: left;
+        margin: 20px 30px;
+      }
+
+
+
+
+    .no2-wrapper {
+      width: 1480px;
+      margin: 0 auto;
+    }
+
+    .no2 {
+      float: left;
+      margin: 0 10px;
+      }
+    .no2-1-wrapper {
+      width: 1480px;
+      margin: 0 auto;
+
+    }
+    .no2-1 {
+      width: 310px;
+      text-align: center;
+      float: left;
+      margin: 0px 30px;
+      font-size: 16px;
+      font-family: "Noto Sans KR";
+      font-weight: 600;
+      color: #C90000;
+    }
+
+
+
+
+      .bottom_wrap{
+          width: 90%;
+          margin: auto;
+          overflow: hidden;
+          margin-top: 10px;
+      }
+
+      .bottom_wrap ul{
+          padding: 0px;
+          margin: 0px;
+      }
+
+
+      .bottom_wrap ul li{
+          float:left;
+          list-style: none;
+          width:20%;
+          height:255px;
+          background: red;
+          margin :20px 0px 20px 55px;
+          border:2px solid blue;
+          box-sizing: border-box;
+      }
+      .bottom_wrap ul li:hover{
+          opacity: 0.8;
+      }
+
+      .bottom_wrap ul li .bottom{
+          width: 100%;
+          height:50px;
+          line-height: 50px;
+          background: blue;
+          text-align: center;
+          color:white;
+          font-size: 20px;
+
+      }
+
+        @media screen and (max-width:1250px){
+            .container ul li{
+                width:40%;
+                margin-left: 40px;}
+    </style>
+
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="container">
+            <ul class="navi">
+              <li><a href="index.html" data-link-alt="메인"><span>메인</span></a></li>
+              <li><a href="director.html" data-link-alt="감독"><span>감독</span></a></li>
+              <li><a href="no1.html" data-link-alt="1관"><span>1관</span></a></li>
+              <li><a href="no2.html" data-link-alt="2관"><span>2관</span></a></li>
+              <li><a href="vip.html" data-link-alt="특별관"><span>특별관</span></a></li>
+              <li><a href="ending.html" data-link-alt="엔딩크레딧"><span>엔딩크레딧</span></a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="container">
+      <div class="content">
+        <div class="no2-wrapper">
+          <div class="no2"><img src="m2.png"width="350px" onmouseover="this.src='m2-1.png' ", onmouseout="this.src='m2.png' " alt="" /></div>
+          <div class="no2"><img src="m3.png"width="350px" onmouseover="this.src='m3-1.png' ", onmouseout="this.src='m3.png' " alt="" /></div>
+          <div class="no2"><img src="m4.png"width="350px" onmouseover="this.src='m4-1.png' ", onmouseout="this.src='m4.png' " alt="" /></div>
+          <div class="no2"><img src="m1.png"width="350px" onmouseover="this.src='m1-1.png' ", onmouseout="this.src='m1.png' " alt="" /></div>
+        </div>
+
+        <div class="no2-1-wrapper">
+          <div class="no2-1"><img src="버튼1.png"width="185px" alt="" /></div>
+          <div class="no2-1"><img src="버튼22.png"width="185px" alt="" /></div>
+          <div class="no2-1"><img src="버튼3.png"width="185px" alt="" /></div>
+          <div class="no2-1"><img src="버튼1.png"width="185px" alt="" /> </div>
+        </div>
+
+      </div>
+      </div>
+      <div class="footer"></div>
+      </div>
+  </body>
+</html>

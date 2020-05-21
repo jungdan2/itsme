@@ -1,0 +1,126 @@
+body {
+  margin: auto;
+  width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  background-image: url(main);}
+
+  html,body,.wrap {height: 100%; margin: 0; padding: 0}
+  .header{
+    height: 50px;
+    background-color: #000;
+    top: 0; left: 0; right: 0;
+  }
+
+  .container{
+    min-height: 90%;
+    padding: 0px 0;
+    background-color: #000;
+  }
+
+  .content{
+    height: 100%;
+  }
+
+  .footer{
+    height:50px;
+    background-color: #000;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;}
+
+
+  .ending {
+    font-family:"Rock Salt";
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .ending_1 {
+    font-family: 'Noto Sans KR';
+    font-size: 13px;
+    font-weight: 300;
+    line-height:400%;
+    color: #fff;
+  }
+  p {
+    font-size: 50px;
+    font-family:"본명조";
+    color:#ffffff;
+    text-shadow: 3px 3px 3px #8C8C8C;
+    position: absolute; top: 25%; left: 25%; }
+
+  ul.navi {
+    width: 98%;
+    background-color:#000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding-top: 30px;
+    margin: auto;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  ul.navi li {
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  ul.navi li a {
+    color: #C90000;
+    text-decoration: none;
+    margin: 0 12px;
+    display: block;
+    position: relative;
+  }
+
+  ul.navi li a:before {
+    content: attr(data-link-alt);
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 100%;
+    transition: 0.5s;
+  }
+
+  ul.navi li a span {
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+
+  }
+  ul.navi li a:hover span {
+    transform: translateY(-100%);
+  }
+
+  ul.navi li a:hover:before {
+    opacity: 1;
+    top: 0;
+  }
+
+
+  .box1-wrapper {
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .box1 {
+    float: left;
+    margin: 0 30px;
+    }
+  .box2-wrapper {
+    width: 920px;
+    margin: 0 auto;
+  }
+  .box2 {
+    float: left;
+    margin: 0 40px;
+  }
+
+  .box3 {
+    float: left;
+  }
